@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Ado Atokoh | WDD 130 Home Page</title>
+    <meta name="description" content="WDD 130 Home Page for Lucky Ado Atokoh featuring personal interests, background, and web development learning goals.">
+    <meta name="author" content="Lucky Ado Atokoh">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lucky Ado Atokoh</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Rafting Site</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>WDD 130 Web Fundamentals</h2>
+        
+        <section class="card">
+            <h3>About Me</h3>
+            <img src="images/profile.jpg" alt="Profile picture of Lucky Ado Atokoh" width="200" height="200">
+            <p>Hello! My name is Lucky Ado Atokoh. I am passionate about learning technology, hands-on technical skills, and web development. I am currently pursuing coursework through BYU PathwayConnect to build strong foundations in web engineering and design.</p>
+        </section>
+
+        <section class="card">
+            <h3>My Hobbies & Interests</h3>
+            <ul>
+                <li>Exploring new technologies and cybersecurity</li>
+                <li>Traveling and discovering new places</li>
+                <li>Listening to music and reading</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Lucky Ado Atokoh| Bwari, Abuja, Nigeria</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
