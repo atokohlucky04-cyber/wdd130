@@ -70,4 +70,38 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    
+    margin-top: 20px;
+    /* Limit the width of the main content */
+main {
+    max-width: 800px;
+}
+
+/* Style the profile image so it doesn't affect the aside image */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Style the new aside box */
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #333333;
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+/* Style the image inside the aside box */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Remove padding from paragraphs */
+p {
+    padding: 0;
+}
+    border-top: 2px solid #333333;
 }
