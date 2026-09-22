@@ -1,0 +1,71 @@
+
+/* Week 2: Main selector width limit */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Week 2: Profile image size */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Week 2: Aside properties */
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    padding: 15px;
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+/* Week 2: Nigeria image size */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Week 2: Paragraph padding to zero */
+p {
+    padding: 0;
+}
+
+/* Week 2: Footer properties */
+footer {
+    margin-top: 20px;
+    border-top: 2px solid #333;
+    text-align: center;
+}
+/* Fix 1: nav background and padding */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Fix 2: nav links color, padding, and block display */
+nav a {
+    color: white;
+    padding: 15px;
+    display: block;
+}
+
+/* Fix 3: main max-width */
+main {
+    max-width: 800px;
+}
+
+/* Fix 4: h1 color */
+h1 {
+    color: #0b2046;
+}
+
+/* Fix 5: main img rules */
+main img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
