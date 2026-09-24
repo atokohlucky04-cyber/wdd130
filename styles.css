@@ -64,6 +64,12 @@ h1 {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.hero article img {
+  float: right;
+  margin: 16px;
+  width: 200px;
+}
+
 /* --- HEADER GRID --- */
 header {
   display: grid;
@@ -100,10 +106,4 @@ footer {
 .social-links {
   display: flex;
   gap: 15px; 
-}
-
-.hero article img {
-  float: right;
-  margin: 16px;
-  width: 200px;
 }
