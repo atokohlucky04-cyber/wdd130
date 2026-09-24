@@ -1,71 +1,109 @@
-
-/* Week 2: Main selector width limit */
-main {
-    width: 80%;
-    margin: 0 auto;
+:root {
+  --primary-color: #005f73;
+  --accent1-color: #0a9396;
+  --body-font: Arial, sans-serif;
+  --heading-font: "Times New Roman", serif;
 }
 
-/* Week 2: Profile image size */
-main img {
-    width: 150px;
-    height: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Week 2: Aside properties */
-aside {
-    width: 300px;
-    margin: 20px auto;
-    border: 2px solid #333;
-    padding: 15px;
-    background-color: #f4f4f4;
-    color: #000;
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
 }
 
-/* Week 2: Nigeria image size */
-aside img {
-    width: 200px;
-    height: auto;
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
 }
 
-/* Week 2: Paragraph padding to zero */
-p {
-    padding: 0;
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-/* Week 2: Footer properties */
-footer {
-    margin-top: 20px;
-    border-top: 2px solid #333;
-    text-align: center;
-}
-/* Fix 1: nav background and padding */
-nav {
-    background-color: #333;
-    padding: 10px;
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
 }
 
-/* Fix 2: nav links color, padding, and block display */
-nav a {
-    color: white;
-    padding: 15px;
-    display: block;
+.socialmedia a {
+  text-decoration: none;
 }
 
-/* Fix 3: main max-width */
-main {
-    max-width: 800px;
+.hero {
+  position: relative;
 }
 
-/* Fix 4: h1 color */
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 h1 {
-    color: #0b2046;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
 }
 
-/* Fix 5: main img rules */
-main img {
-    width: 200px;
-    height: 200px;
-    border: 2px solid #ccc;
-    padding: 5px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+.hero article {
+  position: absolute;
+  top: 150px;
+  width: 80%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* --- HEADER GRID --- */
+header {
+  display: grid;
+  grid-template-columns: 150px auto; 
+  align-items: center; 
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around; 
+}
+
+/* --- ADVENTURE GALLERY FLEXBOX --- */
+.adventure-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px; 
+}
+
+.adventure-gallery img {
+  width: 100%;
+  max-width: 200px; 
+}
+
+/* --- FOOTER FLEXBOX --- */
+footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px; 
+}
+
+.hero article img {
+  float: right;
+  margin: 16px;
+  width: 200px;
 }
