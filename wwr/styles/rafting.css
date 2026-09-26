@@ -103,7 +103,6 @@ footer {
   padding: 20px;
 }
 
-.social-links {
-  display: flex;
-  gap: 15px; 
+.social-links a {
+  text-decoration: nones;
 }
