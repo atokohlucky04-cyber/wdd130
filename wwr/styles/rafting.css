@@ -106,3 +106,96 @@ footer {
 .social-links a {
   text-decoration: nones;
 }
+
+/* --- Contact Page Styles --- */
+
+/* Form Styling */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form fieldset {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #273b5e; /* Primary brand color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #1a2740;
+}
+
+/* Employee Profiles Layout */
+.employees {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.employees figure {
+    text-align: center;
+    max-width: 250px;
+}
+
+.employees img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.employees figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Map Layout */
+.company-info iframe {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+ 
+  navbar {
+    display: flex; /*Aligns items in a row */
+    gap: 20px;   /* Add a 20px space between each item */
+  }
+
