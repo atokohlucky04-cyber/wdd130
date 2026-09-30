@@ -194,8 +194,68 @@ footer {
     border-radius: 8px;
 }
  
-  navbar {
-    display: flex; /*Aligns items in a row */
-    gap: 20px;   /* Add a 20px space between each item */
-  }
+/* --- Contact Page Additions --- */
+.company-info {
+    text-align: center;
+    margin: 20px auto;
+}
 
+.employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.employees img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label, 
+.contact-form input, 
+.contact-form textarea, 
+.contact-form fieldset {
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0a9396;
+}
