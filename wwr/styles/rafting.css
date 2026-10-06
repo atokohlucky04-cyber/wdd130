@@ -1,6 +1,6 @@
 :root {
   --primary-color: #005f73;
-  --accent1-color: #0a9396;
+  --accent1-color: #004445;
   --body-font: Arial, sans-serif;
   --heading-font: "Times New Roman", serif;
 }
@@ -258,4 +258,60 @@ footer {
 
 .contact-form button:hover {
     background-color: #0a9396;
+}
+/* =========================================
+   TRIPS PAGE (trips.html) STYLES
+   ========================================= */
+
+/* Grid layout for the 3 trip cards */
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trip-card {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Styling the Table */
+.trips-table-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trips-table th, .trips-table td {
+    border: 1px solid #004445;
+    padding: 12px;
+    text-align: left;
+}
+
+.trips-table th {
+    background-color: #004445;
+    color: #ffffff;
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f4f4f4; /* Zebra striping for easy reading */
 }
