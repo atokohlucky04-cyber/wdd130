@@ -1,0 +1,317 @@
+:root {
+  --primary-color: #005f73;
+  --accent1-color: #004445;
+  --body-font: Arial, sans-serif;
+  --heading-font: "Times New Roman", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.hero article {
+  position: absolute;
+  top: 150px;
+  width: 80%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero article img {
+  float: right;
+  margin: 16px;
+  width: 200px;
+}
+
+/* --- HEADER GRID --- */
+header {
+  display: grid;
+  grid-template-columns: 150px auto; 
+  align-items: center; 
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around; 
+}
+
+/* --- ADVENTURE GALLERY FLEXBOX --- */
+.adventure-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px; 
+}
+
+.adventure-gallery img {
+  width: 100%;
+  max-width: 200px; 
+}
+
+/* --- FOOTER FLEXBOX --- */
+footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px;
+}
+
+.social-links a {
+  text-decoration: nones;
+}
+
+/* --- Contact Page Styles --- */
+
+/* Form Styling */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form fieldset {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #273b5e; /* Primary brand color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #1a2740;
+}
+
+/* Employee Profiles Layout */
+.employees {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.employees figure {
+    text-align: center;
+    max-width: 250px;
+}
+
+.employees img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.employees figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Map Layout */
+.company-info iframe {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+ 
+/* --- Contact Page Additions --- */
+.company-info {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.employees img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label, 
+.contact-form input, 
+.contact-form textarea, 
+.contact-form fieldset {
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0a9396;
+}
+/* =========================================
+   TRIPS PAGE (trips.html) STYLES
+   ========================================= */
+
+/* Grid layout for the 3 trip cards */
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trip-card {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Styling the Table */
+.trips-table-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trips-table th, .trips-table td {
+    border: 1px solid #004445;
+    padding: 12px;
+    text-align: left;
+}
+
+.trips-table th {
+    background-color: #004445;
+    color: #ffffff;
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f4f4f4; /* Zebra striping for easy reading */
+}
